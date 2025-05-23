@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaCode, FaMobile, FaDatabase, FaShieldAlt, FaChartLine } from 'react-icons/fa';
 import '../styles/body.css';
 
 // Import multiple images for each project (example - you'll need actual images)
@@ -8,42 +8,125 @@ import bazelinkImg2 from '../assets/about.jpeg';
 import bazelinkImg3 from '../assets/sam.jpeg';
 import pharmaImg1 from '../assets/about.jpeg';
 import pharmaImg2 from '../assets/sam.jpeg';
+import bankingImg1 from '../assets/about.jpeg';
+import insuranceImg1 from '../assets/about.jpeg';
+import eventImg1 from '../assets/about.jpeg';
+import gunImg1 from '../assets/sam.jpeg';
 
 const projects = [
   {
-    title: "Bazelink",
-    description: "E-commerce platform with 100+ users, React/Node.js backend",
-    technologies: ["React", "Node", "MongoDB", "Redux"],
-    github: "https://github.com/samnjoro30",
+    title: "Bazelink E-commerce",
+    description: "Full-featured online marketplace with payment integration and admin dashboard",
+    technologies: ["React", "Node.js", "MongoDB", "Redux", "Stripe API"],
+    github: "https://github.com/samnjoro30/bazelink",
     liveDemo: "https://www.bazelink.co.ke",
-    images: [bazelinkImg1, bazelinkImg2, bazelinkImg3],
-    achievements: ["40% downtime reduction", "30% performance boost"]
+    images: [bazelinkImg1, bazelinkImg2],
+    achievements: ["40% downtime reduction", "30% performance boost", "Integrated payment gateway"],
+    icon: <FaCode className="project-icon-featured" />
   },
   {
-    title: "Pharma System",
-    description: "CLI application for pharmaceutical order management",
-    technologies: ["C", "CLI", "File I/O"],
-    github: "https://github.com/samnjoro30/pharma-system.git",
-    images: [pharmaImg1, pharmaImg2],
-    achievements: ["Optimized inventory management", "Reduced order errors by 25%"]
+    title: "Pharma Management System",
+    description: "CLI application for pharmaceutical inventory and order management",
+    technologies: ["C", "File I/O", "Data Structures"],
+    github: "https://github.com/samnjoro30/pharma-system",
+    images: [pharmaImg1],
+    achievements: ["Reduced order errors by 25%", "Automated inventory tracking"],
+    icon: <FaDatabase className="project-icon-featured" />
   },
-  // Add other projects with multiple images...
+  {
+    title: "E-Banking System",
+    description: "Secure online banking platform with transaction history and user management",
+    technologies: ["React", "Node.js", "MySQL", "JWT Auth"],
+    github: "https://github.com/samnjoro30/E-Banking-Tech",
+    images: [bankingImg1],
+    achievements: ["PCI-DSS compliance", "Fraud detection system"],
+    icon: <FaShieldAlt className="project-icon-featured" />
+  },
+  {
+    title: "Insurance Tech Platform",
+    description: "AI-powered insurance recommendation and management system",
+    technologies: ["Python", "FastAPI", "React", "Machine Learning"],
+    github: "https://github.com/samnjoro30/Insurance-tech",
+    liveDemo: "https://insurance-demo.example.com",
+    images: [insuranceImg1],
+    achievements: ["95% accurate recommendations", "Automated claims processing"],
+    icon: <FaChartLine className="project-icon-featured" />
+  },
+  {
+    title: "Event Management System",
+    description: "Ticket booking and event management platform with QR validation",
+    technologies: ["Django", "MySQL", "jQuery", "QR Generation"],
+    github: "https://github.com/samnjoro30/Event_management",
+    images: [eventImg1],
+    achievements: ["20% faster check-ins", "Real-time attendance tracking"],
+    icon: <FaMobile className="project-icon-featured" />
+  },
+  {
+    title: "Firearm Tracking System",
+    description: "Web application for firearm registration and monitoring",
+    technologies: ["Flask", "SQLite", "Python", "Bootstrap"],
+    github: "https://github.com/samnjoro30/firearm_management",
+    images: [gunImg1],
+    achievements: ["Digital firearm registry", "License expiration alerts"],
+    icon: <FaShieldAlt className="project-icon-featured" />
+  }
 ];
 
 const Projects = () => {
+  const [filter, setFilter] = useState('all');
+  
+  const filteredProjects = filter === 'all' 
+    ? projects 
+    : projects.filter(project => 
+        project.technologies.some(tech => 
+          tech.toLowerCase().includes(filter.toLowerCase())
+        )
+      );
+
   return (
     <section className="projects-section" id="projects">
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title">Featured Projects</h2>
+          <h2 className="section-title">My Projects</h2>
           <div className="section-divider"></div>
-          <p className="section-subtitle">Some of my recent work</p>
+          <p className="section-subtitle">A showcase of my development work</p>
+          
+          <div className="project-filters">
+            <button 
+              className={`filter-btn ${filter === 'all' ? 'active' : ''}`}
+              onClick={() => setFilter('all')}
+            >
+              All Projects
+            </button>
+            <button 
+              className={`filter-btn ${filter === 'react' ? 'active' : ''}`}
+              onClick={() => setFilter('react')}
+            >
+              React
+            </button>
+            <button 
+              className={`filter-btn ${filter === 'python' ? 'active' : ''}`}
+              onClick={() => setFilter('python')}
+            >
+              Python
+            </button>
+            <button 
+              className={`filter-btn ${filter === 'database' ? 'active' : ''}`}
+              onClick={() => setFilter('database')}
+            >
+              Databases
+            </button>
+          </div>
         </div>
         
         <div className="projects-wrapper">
           <div className="projects-grid">
-            {projects.map((project, index) => (
-              <ProjectCard key={index} project={project} />
+            {filteredProjects.map((project, index) => (
+              <ProjectCard 
+                key={index} 
+                project={project} 
+                order={index}
+              />
             ))}
           </div>
         </div>
@@ -52,7 +135,7 @@ const Projects = () => {
   );
 };
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, order }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -73,6 +156,7 @@ const ProjectCard = ({ project }) => {
       className="project-card"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      style={{ "--order": order }}
     >
       <div className="project-image-container">
         <img 
@@ -94,6 +178,9 @@ const ProjectCard = ({ project }) => {
             ))}
           </div>
         )}
+        <div className="project-icon-container">
+          {project.icon}
+        </div>
       </div>
       
       <div className="project-content">
@@ -108,7 +195,7 @@ const ProjectCard = ({ project }) => {
         
         {project.achievements && (
           <div className="project-achievements">
-            <span className="achievement-label">Achievements:</span>
+            <span className="achievement-label">Key Achievements:</span>
             {project.achievements.map((achievement, i) => (
               <span key={i} className="achievement-tag">
                 <span className="achievement-bullet">✓</span> {achievement}
@@ -124,8 +211,10 @@ const ProjectCard = ({ project }) => {
           target="_blank" 
           rel="noopener noreferrer"
           aria-label="GitHub repository"
+          className="project-link"
         >
           <FaGithub className="project-icon" />
+          <span>Code</span>
         </a>
         {project.liveDemo && (
           <a 
@@ -133,8 +222,10 @@ const ProjectCard = ({ project }) => {
             target="_blank" 
             rel="noopener noreferrer"
             aria-label="Live demo"
+            className="project-link"
           >
             <FaExternalLinkAlt className="project-icon" />
+            <span>Live Demo</span>
           </a>
         )}
       </div>

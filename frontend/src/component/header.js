@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { FaGithub, FaLinkedin, FaTwitter, FaDownload, FaPaperPlane } from 'react-icons/fa';
 import profileImg from '../assets/sam.jpeg';
 import CV from '../assets/Samuel_Njoroge.pdf';
 import '../styles/header.css';
@@ -12,10 +14,10 @@ const Header = () => {
     const [showPreview, setShowPreview] = useState(false);
     
     const messages = [
-        "Passionate about solving real-world problems using secure, scalable, and modern technologies.",
-        "Cofounder of Bazelink.",
-        "Full-stack developer with expertise in multiple technologies.",
-        "Creating digital solutions that make an impact."
+        "Passionate about solving real-world problems using secure, scalable technologies",
+        "Cofounder of Bazelink - connecting businesses with customers",
+        "Full-stack developer specializing in modern web applications",
+        "Creating digital solutions that drive business growth"
     ];
 
     useEffect(() => {
@@ -31,7 +33,7 @@ const Header = () => {
             setTypingSpeed(isDeleting ? 30 : 150);
             
             if (!isDeleting && text === fullText) {
-                setTimeout(() => setIsDeleting(true), 1000);
+                setTimeout(() => setIsDeleting(true), 1500);
             } else if (isDeleting && text === '') {
                 setIsDeleting(false);
                 setLoopNum(loopNum + 1);
@@ -43,59 +45,92 @@ const Header = () => {
     }, [text, isDeleting, loopNum, messages, typingSpeed]);
 
     const handleDownload = () => {
-        // Create a temporary anchor element
         const link = document.createElement('a');
         link.href = CV;
-        link.download = 'Samuel_Njoroge.pdf';
+        link.download = 'Samuel_Njoroge_Kibandi_CV.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
         setShowPreview(false);
     };
 
-
     return (
         <>
-            <nav className="navbar">
-                <div className="navbar-container">
-                    <div className="navbar-left">
-                        <h2 className="logo">Portfolio</h2>
-                    </div>
-                    <ul className="navbar-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                    <div className="navbar-right">
-                           <button 
+            {/* Animated Navbar */}
+            <motion.nav 
+                className="navbar"
+                initial={{ y: -100 }}
+                animate={{ y: 0 }}
+                transition={{ duration: 0.8, type: "spring" }}
+            >
+                <div className="container">
+                    <div className="navbar-container">
+                        <motion.div 
+                            className="navbar-left"
+                            whileHover={{ scale: 1.05 }}
+                        >
+                            <h2 className="logo">SK</h2>
+                        </motion.div>
+                        
+                        <ul className="navbar-links">
+                            {['Home', 'About', 'Skills', 'Projects', 'Services', 'Contact'].map((item) => (
+                                <motion.li 
+                                    key={item}
+                                    whileHover={{ y: -2 }}
+                                    whileTap={{ scale: 0.95 }}
+                                >
+                                    <a href={`#${item.toLowerCase()}`}>{item}</a>
+                                </motion.li>
+                            ))}
+                        </ul>
+                        
+                        <motion.div 
+                            className="navbar-right"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                        >
+                            <button 
                                 className="btn btn-cv"
                                 onClick={() => setShowPreview(true)}
                             >
-                                Download CV
+                                <FaDownload /> Download CV
                             </button>
+                        </motion.div>
                     </div>
                 </div>
-            </nav>
+            </motion.nav>
+
+            {/* CV Preview Modal */}
             {showPreview && (
-                <div className="cv-preview-modal">
-                    <div className="cv-preview-content">
-                        <h3>Preview CV Before Download</h3>
+                <motion.div 
+                    className="cv-preview-modal"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                >
+                    <motion.div 
+                        className="cv-preview-content"
+                        initial={{ scale: 0.9 }}
+                        animate={{ scale: 1 }}
+                    >
+                        <h3>Preview My Resume</h3>
                         <div className="preview-actions">
-                            <button 
+                            <motion.button 
                                 className="btn btn-primary"
                                 onClick={handleDownload}
+                                whileHover={{ y: -2 }}
+                                whileTap={{ scale: 0.95 }}
                             >
-                                Download Now
-                            </button>
-                            <button 
+                                <FaDownload /> Download Now
+                            </motion.button>
+                            <motion.button 
                                 className="btn btn-outline"
                                 onClick={() => setShowPreview(false)}
+                                whileHover={{ y: -2 }}
+                                whileTap={{ scale: 0.95 }}
                             >
-                                Cancel
-                            </button>
+                                Close Preview
+                            </motion.button>
                         </div>
                         <div className="pdf-preview-container">
                             <iframe 
@@ -104,54 +139,162 @@ const Header = () => {
                                 className="pdf-preview"
                             />
                         </div>
-                    </div>
-                </div>
+                    </motion.div>
+                </motion.div>
             )}
             
+            {/* Hero Section */}
             <header className="header-section">
-                <div className="header-content">
-                    {/* Profile Image with enhanced styling */}
-                    <div className="header-image-wrapper">
-                        <img src={profileImg} alt="Samuel Kibandi" className="header-image" />
-                        <div className="image-overlay"></div>
-                    </div>
-
-                    {/* Text Content */}
-                    <div className="header-text">
-                        <h2>Hello, I'm</h2>
-                        <h1>Samuel Njoroge Kibandi</h1>
-                        <h3 className="typing-text">And I'm a <span className="highlight">Full-Stack Developer</span></h3>
-                        <p className="typewriter">
-                            <span>{text}</span>
-                            <span className="cursor">|</span>
-                        </p>
-
-                        {/* Call-to-Actions */}
-                        <div className="header-buttons">
-                            <a href="mailto:samnjorokibandi@gmail.com" className="btn btn-primary">Hire Me</a>
-                            <a href="#contact" className="btn btn-outline">Contact Me</a>
-                        </div>
-
-                        {/* Social Links */}
-                        <div className="social-links">
-                            <a href="https://github.com/samnjoro30" target="_blank" rel="noreferrer">
-                                <i className="fab fa-github"></i>
-                            </a>
-                            <a href="https://linkedin.com/in/samuel-njoroge-kibandi" target="_blank" rel="noreferrer">
-                                <i className="fab fa-linkedin"></i>
-                            </a>
-                            <a href="#" target="_blank" rel="noreferrer">
-                                <i className="fab fa-twitter"></i>
-                            </a>
-                        </div>
-                    </div>
+                <div className="bg-shapes">
+                    <div className="shape-1"></div>
+                    <div className="shape-2"></div>
                 </div>
+                
+                <div className="container">
+                    <motion.div 
+                        className="header-content"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 0.8 }}
+                    >
+                        {/* Profile Image */}
+                        <motion.div 
+                            className="header-image-wrapper"
+                            initial={{ x: -50, opacity: 0 }}
+                            animate={{ x: 0, opacity: 1 }}
+                            transition={{ duration: 0.8, delay: 0.3 }}
+                            whileHover={{ y: -10 }}
+                        >
+                            <img src={profileImg} alt="Samuel Kibandi" className="header-image" />
+                            <div className="image-overlay"></div>
+                            <div className="image-border"></div>
+                        </motion.div>
 
-                {/* Stats Bar */}
-                <div className="header-stats">
-                    <div><strong>2+</strong><br />Years of Experience</div>
-                    <div><strong>10+</strong><br />Projects Completed</div>
-                    <div><strong>10+</strong><br />Tech Stacks Mastered</div>
+                        {/* Text Content */}
+                        <motion.div 
+                            className="header-text"
+                            initial={{ x: 50, opacity: 0 }}
+                            animate={{ x: 0, opacity: 1 }}
+                            transition={{ duration: 0.8, delay: 0.4 }}
+                        >
+                            <motion.h2
+                                initial={{ y: 20, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ delay: 0.5 }}
+                            >
+                                Hello, I'm
+                            </motion.h2>
+                            
+                            <motion.h1
+                                initial={{ y: 20, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ delay: 0.6 }}
+                            >
+                                Samuel Njoroge Kibandi
+                            </motion.h1>
+                            
+                            <motion.h3 
+                                className="typing-text"
+                                initial={{ y: 20, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ delay: 0.7 }}
+                            >
+                                And I'm a <span className="highlight">Full-Stack Developer</span>
+                            </motion.h3>
+                            
+                            <motion.p 
+                                className="typewriter"
+                                initial={{ y: 20, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ delay: 0.8 }}
+                            >
+                                <span>{text}</span>
+                                <span className="cursor">|</span>
+                            </motion.p>
+
+                            {/* Call-to-Actions */}
+                            <motion.div 
+                                className="header-buttons"
+                                initial={{ y: 20, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ delay: 0.9 }}
+                            >
+                                <motion.a 
+                                    href="mailto:samnjorokibandi@gmail.com" 
+                                    className="btn btn-primary"
+                                    whileHover={{ y: -3 }}
+                                    whileTap={{ scale: 0.95 }}
+                                >
+                                    <FaPaperPlane /> Hire Me
+                                </motion.a>
+                                <motion.a 
+                                    href="#contact" 
+                                    className="btn btn-outline"
+                                    whileHover={{ y: -3 }}
+                                    whileTap={{ scale: 0.95 }}
+                                >
+                                    Contact Me
+                                </motion.a>
+                            </motion.div>
+
+                            {/* Social Links */}
+                            <motion.div 
+                                className="social-links"
+                                initial={{ y: 20, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ delay: 1.0 }}
+                            >
+                                <motion.a 
+                                    href="https://github.com/samnjoro30" 
+                                    target="_blank" 
+                                    rel="noreferrer"
+                                    whileHover={{ y: -3 }}
+                                    whileTap={{ scale: 0.9 }}
+                                >
+                                    <FaGithub />
+                                </motion.a>
+                                <motion.a 
+                                    href="https://linkedin.com/in/samuel-njoroge-kibandi" 
+                                    target="_blank" 
+                                    rel="noreferrer"
+                                    whileHover={{ y: -3 }}
+                                    whileTap={{ scale: 0.9 }}
+                                >
+                                    <FaLinkedin />
+                                </motion.a>
+                                <motion.a 
+                                    href="#" 
+                                    target="_blank" 
+                                    rel="noreferrer"
+                                    whileHover={{ y: -3 }}
+                                    whileTap={{ scale: 0.9 }}
+                                >
+                                    <FaTwitter />
+                                </motion.a>
+                            </motion.div>
+                        </motion.div>
+                    </motion.div>
+
+                    {/* Stats Bar */}
+                    <motion.div 
+                        className="header-stats"
+                        initial={{ y: 50, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ delay: 1.1 }}
+                    >
+                        <div>
+                            <strong>2+</strong>
+                            <span>Years of Experience</span>
+                        </div>
+                        <div>
+                            <strong>10+</strong>
+                            <span>Projects Completed</span>
+                        </div>
+                        <div>
+                            <strong>10+</strong>
+                            <span>Tech Stacks Mastered</span>
+                        </div>
+                    </motion.div>
                 </div>
             </header>
         </>

@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import Header from './component/header';
 import Skills from './component/skills';
 import About from './component/about';
+import Projects from './component/body';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Header />
       <About/>
       <Skills/>
+      <Projects/>
     </div>
   );
 }

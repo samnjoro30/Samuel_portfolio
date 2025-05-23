@@ -1,0 +1,107 @@
+.header-section {
+    background: linear-gradient(180deg, #0f172a, #1e293b);
+    color: white;
+    padding: 80px 20px;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    .header-content {
+      flex-direction: row;
+      text-align: left;
+      gap: 60px;
+    }
+  }
+  
+  .header-image-wrapper {
+    border: 4px solid #38bdf8;
+    border-radius: 50%;
+    padding: 8px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .header-text h1 {
+    font-size: 2.5rem;
+    color: #38bdf8;
+  }
+  
+  .header-text h3 {
+    font-size: 1.5rem;
+    margin: 8px 0;
+  }
+  
+  .header-text p {
+    color: #cbd5e1;
+    max-width: 500px;
+    margin: 16px 0;
+  }
+  
+  .header-buttons {
+    margin: 20px 0;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .btn-primary {
+    background-color: #38bdf8;
+    color: white;
+  }
+  
+  .btn-outline {
+    border: 2px solid white;
+    color: white;
+  }
+  
+  .btn-outline:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .social-links a {
+    margin-right: 15px;
+    color: #94a3b8;
+    text-decoration: none;
+  }
+  
+  .header-stats {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #cbd5e1;
+  }
+  
+  .header-stats strong {
+    font-size: 1.4rem;
+    color: white;
+  }
+  

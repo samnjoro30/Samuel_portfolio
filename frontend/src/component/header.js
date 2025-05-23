@@ -6,6 +6,27 @@ const Header = () => {
     
 
     return(
+        <>
+            <nav className="navbar">
+                <div className="navbar-container">
+                   <div className="navbar-left">
+                        <h2 className="logo">Portfolio</h2>
+                    </div>
+                <ul className="navbar-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div className="navbar-right">
+                    <a href="/assseys/Samuel_Njoroge_Kibandi_CV.pdf" download className="btn btn-cv">
+                        Download CV
+                    </a>
+                </div>
+                </div>
+            </nav>
         <header className="header-section">
             <div className="header-content">
 
@@ -45,9 +66,7 @@ const Header = () => {
                 <div><strong>2+</strong><br />Tech Stacks Mastered</div>
             </div>
         </header>
-
-
-
+    </>
     );
 };
 

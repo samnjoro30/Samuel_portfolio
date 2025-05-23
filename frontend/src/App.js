@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 //import './App.css';
 import Header from './component/header';
+import Skills from './component/skills';
+import About from './component/about';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
       </header> */}
 
       <Header />
+      <About/>
+      <Skills/>
     </div>
   );
 }

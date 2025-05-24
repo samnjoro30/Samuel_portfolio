@@ -3,15 +3,26 @@ import { FaGithub, FaExternalLinkAlt, FaCode, FaMobile, FaDatabase, FaShieldAlt,
 import '../styles/body.css';
 
 // Import multiple images for each project (example - you'll need actual images)
-import bazelinkImg1 from '../assets/about.jpeg';
+import bazelinkImg1 from '../assets/baze1.png';
 import bazelinkImg2 from '../assets/about.jpeg';
 import bazelinkImg3 from '../assets/sam.jpeg';
 import pharmaImg1 from '../assets/about.jpeg';
-import pharmaImg2 from '../assets/sam.jpeg';
+import pharmaImg2 from '../assets/about.jpeg';
 import bankingImg1 from '../assets/about.jpeg';
-import insuranceImg1 from '../assets/about.jpeg';
-import eventImg1 from '../assets/about.jpeg';
-import gunImg1 from '../assets/sam.jpeg';
+import insuranceImg1 from '../assets/Insurance1.png';
+import eventImg1 from '../assets/Event1.png';
+import event1 from '../assets/Event2.png';
+import event2 from '../assets/Event3.png'
+import event3 from '../assets/Event4.png'
+import event4 from '../assets/Event5.png'
+import event5 from '../assets/Event6.png'
+import event6 from '../assets/Event7.png'
+import event7 from '../assets/Event8.png'
+import gunImg1 from '../assets/gun2.png';
+
+import gun1 from '../assets/Gun1.png';
+import gun2 from '../assets/gun3.png';
+import gun3 from '../assets/Gun4.png';
 
 const projects = [
   {
@@ -57,7 +68,7 @@ const projects = [
     description: "Ticket booking and event management platform with QR validation",
     technologies: ["Django", "MySQL", "jQuery", "QR Generation"],
     github: "https://github.com/samnjoro30/Event_management",
-    images: [eventImg1],
+    images: [eventImg1, event2, event1, event3, event4, event5, event6, event7],
     achievements: ["20% faster check-ins", "Real-time attendance tracking"],
     icon: <FaMobile className="project-icon-featured" />
   },
@@ -66,7 +77,7 @@ const projects = [
     description: "Web application for firearm registration and monitoring",
     technologies: ["Flask", "SQLite", "Python", "Bootstrap"],
     github: "https://github.com/samnjoro30/firearm_management",
-    images: [gunImg1],
+    images: [gunImg1, gun1, gun2, gun3],
     achievements: ["Digital firearm registry", "License expiration alerts"],
     icon: <FaShieldAlt className="project-icon-featured" />
   }

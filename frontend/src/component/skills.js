@@ -14,7 +14,7 @@ const skills = [
   },
   { 
     title: "Backend & APIs", 
-    items: "Node.js, Express.js, Flask, FastAPI, JWT, REST, GraphQL",
+    items: "Node.js, Express.js, Flask, FastAPI, JWT, REST, laravel",
     icon: "🔌"
   },
   { 
@@ -24,32 +24,32 @@ const skills = [
   },
   { 
     title: "DevOps & Tools", 
-    items: "Git, GitHub, Docker, Kubernetes, CI/CD Pipelines, Render, Vercel",
+    items: "Git, GitHub, Docker, CI/CD Pipelines, Render, Vercel",
     icon: "🛠️"
   },
   { 
     title: "Cloud & Infrastructure", 
-    items: "Google Cloud Platform, Firebase Hosting, AWS (EC2, S3), Azure",
+    items: "Google Cloud Platform, Firebase Hosting, AWS (EC2, S3)",
     icon: "☁️"
   },
   { 
     title: "Data Analysis & Visualization", 
-    items: "Pandas, NumPy, Matplotlib, Seaborn, Jupyter, Tableau, Power BI",
+    items: "Pandas, NumPy, Matplotlib, Seaborn, Jupyter, Tableau, Google colab, Jupiter Notebook, anacoda",
     icon: "📊"
   },
   { 
     title: "Microsoft Office Suite", 
-    items: "Excel (Advanced), Word, PowerPoint, Publisher, Access, Outlook",
+    items: "Excel , Word, PowerPoint, Publisher, Access, Outlook",
     icon: "📝"
   },
   { 
     title: "Cybersecurity", 
-    items: "Network Security, Ethical Hacking, Penetration Testing, OWASP",
+    items: "Network Security, Ethical Hacking, Penetration Testing, ",
     icon: "🔒"
   },
   { 
     title: "UI/UX Design", 
-    items: "Figma, Adobe XD, User Research, Wireframing, Prototyping",
+    items: "User Research, Prototyping, canva",
     icon: "🎨"
   },
   { 

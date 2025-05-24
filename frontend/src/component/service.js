@@ -41,7 +41,7 @@ const services = [
     icon: <FaShieldAlt className="service-icon" />,
     title: "Security Implementation",
     description: "Secure applications with JWT/OAuth, encryption, and regular security audits following OWASP guidelines.",
-    highlights: ["Penetration Testing", "Data Encryption", "Security Headers"]
+    highlights: ["Data Encryption", "Security Headers"]
   },
   {
     icon: <FaCloud className="service-icon" />,

@@ -211,7 +211,7 @@ const Contact = () => {
             
             <motion.a 
               variants={socialItem}
-              href="#"  // Add your Upwork URL
+              href="https://www.upwork.com/freelancers/~01d2ea3072e22a589a?mp_source=share"  // Add your Upwork URL
               target="_blank" 
               rel="noopener noreferrer"
               className="social-link upwork"

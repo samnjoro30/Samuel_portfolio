@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaGithub, FaExternalLinkAlt, FaCode, FaMobile, FaDatabase, FaShieldAlt, FaChartLine } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaCode, FaMobile, FaDatabase, FaShieldAlt, FaChartLine, FaCloudSunRain } from 'react-icons/fa';
 import '../styles/body.css';
 
 // Import multiple images for each project (example - you'll need actual images)
@@ -39,7 +39,7 @@ const projects = [
     title: "Bazelink E-commerce",
     description: "Full-featured online marketplace with payment integration and admin dashboard",
     technologies: ["React", "Node.js", "MongoDB", "Redux", "Stripe API"],
-    github: "https://github.com/samnjoro30/bazelink",
+    // github: "https://github.com/samnjoro30/bazelink",
     liveDemo: "https://www.bazelink.co.ke",
     images: [bazelinkImg1, bazelinkImg2],
     achievements: ["40% downtime reduction", "30% performance boost", "Integrated payment gateway"],
@@ -68,7 +68,7 @@ const projects = [
     description: "AI-powered insurance recommendation and management system",
     technologies: ["Python", "FastAPI", "React", "Machine Learning"],
     github: "https://github.com/samnjoro30/Insurance-tech",
-    liveDemo: "https://insurance-demo.example.com",
+    // liveDemo: "",
     images: [insuranceImg1],
     achievements: ["95% accurate recommendations", "Automated claims processing"],
     icon: <FaChartLine className="project-icon-featured" />
@@ -93,21 +93,21 @@ const projects = [
   },
   {
     title: "Weather web system",
-    description: "web Application",
+    description: "A real-time weather forecasting web app with dynamic data visualization",
     technologies: ["Next js", "tailwind css", "laravel"],
     github: "https://github.com/samnjoro30/weather_app.git",
     images: [weather2, weather],
-    achievements: [],
-    icon: <FaShieldAlt className="project-icon-featured" />
+    achievements: ["Real-Time API Integration: Fetched and displayed live weather data from OpenWeatherMap", ""],
+    icon: <FaCloudSunRain className="project-icon-featured" />
   }, 
   {
     title: "Fairscore",
-    description: "web application",
+    description: "A dynamic web application designed to bridge scoring fairness gaps in evaluations (academic/sports/assessments) using transparent, technology-driven methods",
     technologies: ["Html", "css", "Javascript", "php"],
     github: "https://github.com/samnjoro30/FairScore.git",
     images: [Fair, Fair1, Fair2, Fair3, Fair4, Fair5, Fair6],
-    achievements: [],
-    icon: <FaShieldAlt className="project-icon-featured" />
+    achievements: ["Achieved 95%+ accessibility score (WCAG) with semantic HTML/CSS", "Real-time scoring analytics"],
+    icon: <FaChartLine className="project-icon-featured" />
   }
 ];
 
@@ -203,7 +203,7 @@ const ProjectCard = ({ project, order }) => {
           alt={project.title} 
           className="project-image" 
         />
-        {project.images.length > 1 && (
+        {project.images.length > 7 && (
           <div className="image-indicators">
             {project.images.map((_, index) => (
               <span 

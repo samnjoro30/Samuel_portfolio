@@ -15,7 +15,7 @@ const About = () => {
           <div className="about-content">
             <div className="about-text">
               <p>
-                I'm <strong>Samuel Njoroge Kibandi</strong>, a passionate and versatile <strong>Information Technologist</strong> based in Nairobi, Kenya.
+                I'm <strong>Samuel Njoroge Kibandi</strong>, Specializing in  <strong>Information Technology</strong> based in Nairobi, Kenya.
                 I co-founded <strong>Bazelink</strong>, where I've led the development of robust, scalable systems across e-commerce,
                 insurance, and banking industries.
               </p>

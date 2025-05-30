@@ -199,7 +199,7 @@ const Header = () => {
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ delay: 0.7 }}
                             >
-                                And I'm a <span className="highlight">Full-Stack Developer</span>
+                                And I'm a <span className="highlight">Full-Stack Developer |  Cloud  Enthusiast</span>
                             </motion.h3>
                             
                             <motion.p 

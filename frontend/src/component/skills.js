@@ -14,7 +14,7 @@ const skills = [
   },
   { 
     title: "Backend & APIs", 
-    items: "Node.js, Express.js, Flask, FastAPI, JWT, REST, laravel",
+    items: "Node.js ⚡, Express.js, Flask, FastAPI, JWT, REST, laravel",
     icon: "🔌"
   },
   { 

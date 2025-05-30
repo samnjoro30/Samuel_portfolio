@@ -19,10 +19,20 @@ import event5 from '../assets/Event6.png'
 import event6 from '../assets/Event7.png'
 import event7 from '../assets/Event8.png'
 import gunImg1 from '../assets/gun2.png';
-
+import weather from '../assets/weather1.png';
+import weather2 from '../assets/weather2.png';
+//gun track
 import gun1 from '../assets/Gun1.png';
 import gun2 from '../assets/gun3.png';
 import gun3 from '../assets/Gun4.png';
+//fair
+import Fair from '../assets/fair2.png';
+import Fair1 from '../assets/fair3.png';
+import Fair2 from '../assets/fair4.png';
+import Fair3 from '../assets/fair5.png';
+import Fair4 from '../assets/fair6.png';
+import Fair5 from '../assets/fair7.png';
+import Fair6 from '../assets/fair8.png';
 
 const projects = [
   {
@@ -79,6 +89,24 @@ const projects = [
     github: "https://github.com/samnjoro30/firearm_management",
     images: [gunImg1, gun1, gun2, gun3],
     achievements: ["Digital firearm registry", "License expiration alerts"],
+    icon: <FaShieldAlt className="project-icon-featured" />
+  },
+  {
+    title: "Weather web system",
+    description: "web Application",
+    technologies: ["Next js", "tailwind css", "laravel"],
+    github: "https://github.com/samnjoro30/weather_app.git",
+    images: [weather2, weather],
+    achievements: [],
+    icon: <FaShieldAlt className="project-icon-featured" />
+  }, 
+  {
+    title: "Fairscore",
+    description: "web application",
+    technologies: ["Html", "css", "Javascript", "php"],
+    github: "https://github.com/samnjoro30/FairScore.git",
+    images: [Fair, Fair1, Fair2, Fair3, Fair4, Fair5, Fair6],
+    achievements: [],
     icon: <FaShieldAlt className="project-icon-featured" />
   }
 ];

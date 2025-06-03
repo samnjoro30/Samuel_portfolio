@@ -2,55 +2,72 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/sam tech.png" />
+    <link rel="icon" href="%PUBLIC_URL%/sam-tech.png" /> <!-- Changed filename to remove space -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    
+    <!-- Improved Meta Description -->
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Sam Tech Solution offers professional web development, IT consulting, and tech solutions. Expert services for businesses and individuals."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/sam tech.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="keywords" content="web development, tech solutions, IT services, software development, programming services" />
+    <meta name="author" content="Sam Tech Solution" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://sam-tech-solution.web.app/" />
+    
+    <!-- Open Graph / Social Media Meta -->
+    <meta property="og:title" content="Sam Tech Solution | Professional IT Services & Web Development" />
+    <meta property="og:description" content="Expert tech solutions and web development services for your business needs." />
+    <meta property="og:url" content="https://sam-tech-solution.web.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="%PUBLIC_URL%/sam-tech-social.png" />
+    
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/sam-tech.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Sam tech Profile</title>
+    
+    <!-- Improved Title with Keywords -->
+    <title>Sam Tech Solution | Web Development & IT Services | Nairobi</title>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Sam Tech Solution",
+      "url": "https://sam-tech-solution.web.app/",
+      "description": "Professional IT services and web development solutions",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nairobi",
+        "addressCountry": "Kenya"
+      },
+      "telephone": "+254 791 186 675"
+    }
+    </script>
+    
+    <!-- Google Tag Manager -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6DPZB2YL6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-E6DPZB2YL6');
+    </script>
   </head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6DPZB2YL6"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-     gtag('config', 'G-E6DPZB2YL6');
-  </script>
   <body>
-    <noscript>You need to enable JavaScript to run this app.
+    <noscript>
       <div style="text-align:center; padding:20px; background:#eee;">
-        This website requires JavaScript to display properly. Please enable JavaScript or visit a simplified version.
+        <h1>Sam Tech Solution</h1>
+        <p>This website requires JavaScript to function properly. Please enable JavaScript or contact us directly.</p>
+        <p>Email: <a href="mailto:samnjorokibandi@email.com">samnjorokibandi@gmail.com</a></p>
+        <p>Phone: <a href="tel:+254 791 186 675">+254 791 186 675</a></p>
       </div>
     </noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>

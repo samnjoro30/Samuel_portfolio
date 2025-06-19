@@ -8,7 +8,7 @@ import bazelinkImg2 from '../assets/about.jpeg';
 import bazelinkImg3 from '../assets/sam.jpeg';
 import pharmaImg1 from '../assets/about.jpeg';
 import pharmaImg2 from '../assets/about.jpeg';
-import bankingImg1 from '../assets/about.jpeg';
+import bankingImg1 from '../assets/Ebank1.png';
 import insuranceImg1 from '../assets/Insurance1.png';
 import eventImg1 from '../assets/Event1.png';
 import event1 from '../assets/Event2.png';

@@ -8,7 +8,6 @@
     <lastmod>2024-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://sam-tech-solution.web.app/" />
   </url>
   
   <!-- Services Page -->
@@ -17,7 +16,6 @@
     <lastmod>2024-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://sam-tech-solution.web.app/services" />
   </url>
   
   <!-- Contact Page -->
@@ -26,7 +24,6 @@
     <lastmod>2024-06-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://sam-tech-solution.web.app/contact" />
   </url>
   
   <!-- Additional Recommended Pages -->
@@ -37,7 +34,6 @@
     <lastmod>2024-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://sam-tech-solution.web.app/about" />
   </url>
   
 </urlset>

@@ -8,8 +8,10 @@ import bazelinkImg2 from '../assets/about.jpeg';
 import bazelinkImg3 from '../assets/sam.jpeg';
 import pharmaImg1 from '../assets/about.jpeg';
 import pharmaImg2 from '../assets/about.jpeg';
+//banking and insurancec
 import bankingImg1 from '../assets/Ebank1.png';
 import insuranceImg1 from '../assets/Insurance1.png';
+//events images
 import eventImg1 from '../assets/Event1.png';
 import event1 from '../assets/Event2.png';
 import event2 from '../assets/Event3.png'
@@ -19,6 +21,7 @@ import event5 from '../assets/Event6.png'
 import event6 from '../assets/Event7.png'
 import event7 from '../assets/Event8.png'
 import gunImg1 from '../assets/gun2.png';
+//weather
 import weather from '../assets/weather1.png';
 import weather2 from '../assets/weather2.png';
 //gun track

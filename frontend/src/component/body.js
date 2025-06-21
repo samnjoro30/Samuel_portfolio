@@ -62,6 +62,7 @@ const projects = [
     description: "Secure online banking platform with transaction history and user management",
     technologies: ["React", "Node.js", "MySQL", "JWT Auth"],
     github: "https://github.com/samnjoro30/E-Banking-Tech",
+    liveDemo: "https://e-banking-tech-61d82.web.app",
     images: [bankingImg1],
     achievements: ["PCI-DSS compliance", "Fraud detection system"],
     icon: <FaShieldAlt className="project-icon-featured" />

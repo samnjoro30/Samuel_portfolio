@@ -21,7 +21,10 @@ jobs:
           fetch-depth: 0
       - name: Install and Build my portfolio
         working-directory: ./frontend
-        run: npm ci && npm run build
+        run: |
+          npm ci 
+          npm ls react-scripts
+          npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}

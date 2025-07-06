@@ -60,7 +60,7 @@ const projects = [
   {
     title: "E-Banking System",
     description: "Secure online banking platform with transaction history and user management",
-    technologies: ["React", "Node.js", "MySQL", "JWT Auth"],
+    technologies: ["React", "Node.js", "MySQL", "JWT Auth", "Github Actions"],
     github: "https://github.com/samnjoro30/E-Banking-Tech",
     liveDemo: "https://e-banking-tech-61d82.web.app",
     images: [bankingImg1],
@@ -70,7 +70,7 @@ const projects = [
   {
     title: "Insurance Tech Platform",
     description: "AI-powered insurance recommendation and management system",
-    technologies: ["Python", "FastAPI", "React", "Machine Learning"],
+    technologies: ["Python", "FastAPI", "React", "Node.js"],
     github: "https://github.com/samnjoro30/Insurance-tech",
     // liveDemo: "",
     images: [insuranceImg1],
@@ -98,7 +98,7 @@ const projects = [
   {
     title: "Weather web system",
     description: "A real-time weather forecasting web app with dynamic data visualization",
-    technologies: ["Next js", "tailwind css", "laravel"],
+    technologies: ["Next.js", "tailwind css", "laravel"],
     github: "https://github.com/samnjoro30/weather_app.git",
     images: [weather2, weather],
     achievements: ["Real-Time API Integration: Fetched and displayed live weather data from OpenWeatherMap", ""],
@@ -145,13 +145,25 @@ const Projects = () => {
               className={`filter-btn ${filter === 'react' ? 'active' : ''}`}
               onClick={() => setFilter('react')}
             >
-              React
+              React.js
+            </button>
+            <button
+              className={ `filter-btn ${filter === 'Next.js' ? 'active' : ''}`}
+              onClick={ () => setFilter('next.js')}
+            >
+              Next.js
             </button>
             <button 
               className={`filter-btn ${filter === 'python' ? 'active' : ''}`}
               onClick={() => setFilter('python')}
             >
               Python
+            </button>
+            <button
+               className={`filter-btn ${filter === 'Node.js' ? 'active' : ''}`}
+               onClick={() => setFilter('Node.js')}
+            >
+              Node.js
             </button>
             <button 
               className={`filter-btn ${filter === 'database' ? 'active' : ''}`}

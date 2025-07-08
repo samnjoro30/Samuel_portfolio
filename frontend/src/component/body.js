@@ -72,7 +72,7 @@ const projects = [
     description: "AI-powered insurance recommendation and management system",
     technologies: ["Python", "FastAPI", "React", "Node.js"],
     github: "https://github.com/samnjoro30/Insurance-tech",
-    // liveDemo: "",
+    liveDemo: "https://insurance-tech-xi.vercel.app/",
     images: [insuranceImg1],
     achievements: ["95% accurate recommendations", "Automated claims processing"],
     icon: <FaChartLine className="project-icon-featured" />

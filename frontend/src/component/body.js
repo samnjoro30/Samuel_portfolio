@@ -74,7 +74,7 @@ const projects = [
     github: "https://github.com/samnjoro30/Insurance-tech",
     liveDemo: "https://insurance-tech-xi.vercel.app/",
     images: [insuranceImg1],
-    achievements: ["95% accurate recommendations", "Automated claims processing"],
+    achievements: ["In development"],
     icon: <FaChartLine className="project-icon-featured" />
   },
   {
@@ -82,6 +82,7 @@ const projects = [
     description: "Ticket booking and event management platform with QR validation",
     technologies: ["Django", "MySQL", "jQuery", "QR Generation"],
     github: "https://github.com/samnjoro30/Event_management",
+    liveDemo: "https://event-management-chry.onrender.com",
     images: [eventImg1, event2, event1, event3, event4, event5, event6, event7],
     achievements: ["20% faster check-ins", "Real-time attendance tracking"],
     icon: <FaMobile className="project-icon-featured" />

@@ -17,19 +17,13 @@ const services = [
     icon: <FaCode className="service-icon" />,
     title: "Frontend Development",
     description: "Modern, responsive web applications using React, Next.js, and modern JavaScript frameworks with TypeScript support.",
-    highlights: ["SPA/PWA Development", "UI Component Libraries", "Performance Optimization"]
+    highlights: [ "UI Component Libraries", "Performance Optimization"]
   },
   {
     icon: <FaServer className="service-icon" />,
     title: "Backend Development",
-    description: "Scalable server-side solutions with Node.js, Express, Django, and FastAPI with RESTful or GraphQL APIs.",
+    description: "Scalable server-side solutions with Node.js, Express, Django, and FastAPI with RESTful",
     highlights: ["Microservices Architecture", "API Development", "Authentication Systems"]
-  },
-  {
-    icon: <FaMobileAlt className="service-icon" />,
-    title: "Mobile-First Design",
-    description: "Responsive designs that work perfectly across all device sizes with progressive enhancement strategies.",
-    highlights: ["Responsive Frameworks", "Cross-browser Testing", "Touch Optimization"]
   },
   {
     icon: <FaDatabase className="service-icon" />,
@@ -53,7 +47,7 @@ const services = [
     icon: <FaChartLine className="service-icon" />,
     title: "Data Analysis",
     description: "Data processing and visualization with Python, Pandas, and business intelligence tools.",
-    highlights: ["ETL Pipelines", "Dashboard Creation", "Predictive Modeling"]
+    highlights: [ "Dashboard Creation", "Predictive Modeling"]
   },
   {
     icon: <FaCogs className="service-icon" />,

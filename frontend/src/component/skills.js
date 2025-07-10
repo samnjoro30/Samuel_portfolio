@@ -44,24 +44,15 @@ const skills = [
   },
   { 
     title: "Cybersecurity", 
-    items: "Network Security, Ethical Hacking, Penetration Testing, ",
+    items: "Network Security, Software security setup ",
     icon: "🔒"
-  },
-  { 
-    title: "UI/UX Design", 
-    items: "User Research, Prototyping, canva",
-    icon: "🎨"
   },
   { 
     title: "Operating Systems", 
     items: "Windows, Linux (Ubuntu, Kali), macOS, Android",
     icon: "🖥️"
   },
-  { 
-    title: "Project Management", 
-    items: "Agile Methodologies, Scrum, Trello, Jira, Asana",
-    icon: "📅"
-  }
+  
 ];
 
 const Skills = () => {

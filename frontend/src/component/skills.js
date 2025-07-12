@@ -47,11 +47,11 @@ const skills = [
     items: "Network Security, Software security setup ",
     icon: "🔒"
   },
-  { 
-    title: "Operating Systems", 
-    items: "Windows, Linux (Ubuntu, Kali), macOS, Android",
-    icon: "🖥️"
-  },
+  // { 
+  //   title: "Operating Systems", 
+  //   items: "Windows, Linux (Ubuntu, Kali), macOS, Android",
+  //   icon: "🖥️"
+  // },
   
 ];
 

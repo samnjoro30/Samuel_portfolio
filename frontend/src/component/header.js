@@ -294,6 +294,10 @@ const Header = () => {
                             <strong>10+</strong>
                             <span>Tech Stacks Mastered</span>
                         </div>
+                        <div>
+                            <strong>98%</strong>
+                            <span>Project Success Rate</span>
+                        </div>
                     </motion.div>
                 </div>
             </header>

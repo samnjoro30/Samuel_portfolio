@@ -31,12 +31,12 @@ const services = [
     description: "Efficient data storage solutions with MongoDB, PostgreSQL, and Firebase with proper indexing and optimization.",
     highlights: ["Database Design", "Query Optimization", "Data Migration"]
   },
-  {
-    icon: <FaShieldAlt className="service-icon" />,
-    title: "Security Implementation",
-    description: "Secure applications with JWT/OAuth, encryption, and regular security audits following OWASP guidelines.",
-    highlights: ["Data Encryption", "Security Headers"]
-  },
+  // {
+  //   icon: <FaShieldAlt className="service-icon" />,
+  //   title: "Security Implementation",
+  //   description: "Secure applications with JWT/OAuth, encryption, and regular security audits following OWASP guidelines.",
+  //   highlights: ["Data Encryption", "Security Headers"]
+  // },
   {
     icon: <FaCloud className="service-icon" />,
     title: "Cloud Deployment",

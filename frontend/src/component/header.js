@@ -15,7 +15,7 @@ const Header = () => {
     
     const messages = [
         "Passionate about solving real-world problems using secure, scalable technologies",
-        "Cofounder of Bazelink - connecting businesses with customers",
+        "Co-founder of Bazelink - connecting businesses with customers",
         "Full-stack developer specializing in modern web applications",
         "Creating digital solutions that drive business growth"
     ];
@@ -199,7 +199,7 @@ const Header = () => {
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ delay: 0.7 }}
                             >
-                                And I'm a <span className="highlight">Full-Stack Developer |  Cloud  Enthusiast</span>
+                                And I'm a <span className="highlight">Full-Stack Developer |  Cloud & DevOps  Enthusiast</span>
                             </motion.h3>
                             
                             <motion.p 

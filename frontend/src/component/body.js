@@ -60,17 +60,17 @@ const projects = [
   {
     title: "E-Banking System",
     description: "Secure online banking platform with transaction history and user management",
-    technologies: ["React", "Node.js", "MySQL", "JWT Auth", "Github Actions"],
+    technologies: ["React+vite", "Next.js", "Node.js", "MySQL", "MongoDb cloud", "JWT Auth", "Github Actions"],
     github: "https://github.com/samnjoro30/E-Banking-Tech",
     liveDemo: "https://e-banking-tech-61d82.web.app",
     images: [bankingImg1],
-    achievements: ["PCI-DSS compliance", "Fraud detection system"],
+    achievements: ["PCI-DSS compliance", "Fraud detection system", "Working towards using ec2 instance inn AWS"],
     icon: <FaShieldAlt className="project-icon-featured" />
   },
   {
     title: "Insurance Tech Platform",
     description: "AI-powered insurance recommendation and management system",
-    technologies: ["Python", "FastAPI", "React", "Node.js"],
+    technologies: ["Python", "FastAPI", "React+vite", "Node.js"],
     github: "https://github.com/samnjoro30/Insurance-tech",
     liveDemo: "https://insurance-tech-xi.vercel.app/",
     images: [insuranceImg1],
@@ -80,7 +80,7 @@ const projects = [
   {
     title: "Event Management System",
     description: "Ticket booking and event management platform with QR validation",
-    technologies: ["Django", "MySQL", "jQuery", "QR Generation"],
+    technologies: ["Django", "MySQL", "Postgre(supabase)", "HTML", "Css", "Javascript"],
     github: "https://github.com/samnjoro30/Event_management",
     liveDemo: "https://event-management-chry.onrender.com",
     images: [eventImg1, event2, event1, event3, event4, event5, event6, event7],

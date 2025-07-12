@@ -19,7 +19,7 @@ const skills = [
   },
   { 
     title: "Databases", 
-    items: "MongoDB, MySQL, PostgreSQL, SQLite, Firebase Firestore",
+    items: "MongoDB, MySQL, PostgreSQL, SQLite, Firebase Firestore, supabase",
     icon: "🗄️"
   },
   { 
@@ -29,7 +29,7 @@ const skills = [
   },
   { 
     title: "Cloud & Infrastructure", 
-    items: "Google Cloud Platform, Firebase Hosting, AWS (EC2, S3)",
+    items: "Google Cloud Platform, Firebase Hosting, AWS (EC2, S3, lamda), cloudinary",
     icon: "☁️"
   },
   { 

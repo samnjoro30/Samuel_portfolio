@@ -24,7 +24,7 @@ const skills = [
   },
   { 
     title: "DevOps & Tools", 
-    items: "Git, GitHub, Docker, CI/CD Pipelines, Render, Vercel",
+    items: "Git, GitHub, Docker, CI/CD Pipelines, ssh, Render, Vercel",
     icon: "🛠️"
   },
   { 

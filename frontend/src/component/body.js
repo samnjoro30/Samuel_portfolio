@@ -70,7 +70,7 @@ const projects = [
   {
     title: "Insurance Tech Platform",
     description: "AI-powered insurance recommendation and management system",
-    technologies: ["Python", "FastAPI", "React+vite", "Node.js"],
+    technologies: ["Python", "FastAPI", "React+vite", "Typescript", "Node.js"],
     github: "https://github.com/samnjoro30/Insurance-tech",
     liveDemo: "https://insurance-tech-xi.vercel.app/",
     images: [insuranceImg1],
@@ -99,7 +99,7 @@ const projects = [
   {
     title: "Weather web system",
     description: "A real-time weather forecasting web app with dynamic data visualization",
-    technologies: ["Next.js", "tailwind css", "laravel"],
+    technologies: ["Next.js", 'Typescript', "tailwind css", "laravel"],
     github: "https://github.com/samnjoro30/weather_app.git",
     images: [weather2, weather],
     achievements: ["Real-Time API Integration: Fetched and displayed live weather data from OpenWeatherMap", ""],

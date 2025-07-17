@@ -9,7 +9,7 @@ const skills = [
   },
   { 
     title: "Web Development", 
-    items: "React.js, Next.js, HTML5, CSS3, Django, Laravel, Bootstrap, Tailwind CSS",
+    items: "React.js, Next.js, Typescript, HTML5, CSS3, Django, Laravel, Bootstrap, Tailwind CSS",
     icon: "🌐"
   },
   { 

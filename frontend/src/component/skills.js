@@ -44,7 +44,7 @@ const skills = [
   },
   { 
     title: "Cybersecurity", 
-    items: "Network Security, Software security setup ",
+    items: "Network Security, Antivirus installation(Kaspersky), Software security setup ",
     icon: "🔒"
   },
   // { 

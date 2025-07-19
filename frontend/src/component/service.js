@@ -2,13 +2,13 @@ import React from 'react';
 import { 
   FaCode, 
   FaServer, 
-  FaMobileAlt, 
+  //FaMobileAlt, 
   FaDatabase, 
-  FaShieldAlt, 
+  //FaShieldAlt, 
   FaCloud,
   FaChartLine,
   FaCogs,
-  FaPalette
+  //FaPalette
 } from 'react-icons/fa';
 import '../styles/service.css';
 

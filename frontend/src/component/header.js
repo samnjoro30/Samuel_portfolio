@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaTwitter, FaDownload, FaPaperPlane } from 'react-icons/fa';
-import profileImg from '../assets/sam.jpeg';
+import profileImg from '../assets/sam1.jpeg';
 import CV from '../assets/Samuel_Njoroge_Kibandi_Resume_Update_6_2025.pdf';
 import '../styles/header.css';
 
@@ -164,6 +164,7 @@ const Header = () => {
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ duration: 0.8, delay: 0.3 }}
                             whileHover={{ y: -10 }}
+                            whileTap={{ scale: 1.05 }}
                         >
                             <img src={profileImg} alt="Samuel Kibandi" className="header-image" />
                             <div className="image-overlay"></div>

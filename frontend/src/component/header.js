@@ -93,7 +93,7 @@ const Header = () => {
                                 className="btn btn-cv"
                                 onClick={() => setShowPreview(true)}
                             >
-                                <FaDownload /> Download CV
+                                <FaDownload /> View CV
                             </button>
                         </motion.div>
                     </div>

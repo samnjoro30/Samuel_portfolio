@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaTwitter, FaDownload, FaPaperPlane } from 'react-icons/fa';
-import profileImg from '../assets/sam1.jpeg';
+import profileImg from '../assets/sam5.jpeg';
 import CV from '../assets/Samuel_Njoroge_Kibandi_Resume_Update_6_2025.pdf';
 import '../styles/header.css';
 

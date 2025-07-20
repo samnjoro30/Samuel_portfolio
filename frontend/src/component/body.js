@@ -80,7 +80,7 @@ const projects = [
   {
     title: "Event Management System",
     description: "Ticket booking and event management platform with QR validation",
-    technologies: ["Django", "MySQL", "Postgre(supabase)", "HTML", "Css", "Javascript"],
+    technologies: ["Django", "MySQL", "Postgre(supabase)", "HTML", "Css", "Javascript", "Cloudinary"],
     github: "https://github.com/samnjoro30/Event_management",
     liveDemo: "https://event-management-chry.onrender.com",
     images: [eventImg1, event2, event1, event3, event4, event5, event6, event7],

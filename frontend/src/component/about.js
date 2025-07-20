@@ -21,7 +21,7 @@ const About = () => {
               </p>
               <p>
                 Beyond software development, I specialize in areas such as <strong>Data Analysis</strong> (using tools like Pandas, Matplotlib, and Jupyter),
-                <strong> Cybersecurity</strong>, and <strong>Cloud Infrastructure</strong> (GCP, Firebase). I enjoy blending development, IT operations,
+                <strong> Cybersecurity</strong>, and <strong>Cloud Infrastructure</strong> (GCP, Firebase, AWS, Cloudinary). I enjoy blending development, IT operations,
                 and analytical thinking to solve real-world challenges with technology.
               </p>
               <p>

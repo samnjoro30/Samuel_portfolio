@@ -65,7 +65,8 @@ const projects = [
     technologies:["FastAPI", "Next.js", "Postgre DB", "Tailwind css", "Daisy.ui",],
     github: "https://github.com/samnjoro30/Smart_Agriculture.git",
     images: [Agri],
-    achievements: ["In development", "Full authentication backend complete"]
+    achievements: ["In development", "Full authentication backend complete"],
+    icon: <FaDatabase className="project-icon-featured" />
   },
   {
     title: "E-Banking System",

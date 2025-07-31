@@ -6,7 +6,6 @@ import '../styles/body.css';
 import bazelinkImg1 from '../assets/baze1.png';
 import bazelinkImg2 from '../assets/about.jpeg';
 //import bazelinkImg3 from '../assets/sam.jpeg';
-import pharmaImg1 from '../assets/about.jpeg';
 //import pharmaImg2 from '../assets/about.jpeg';
 //banking and insurancec
 import bankingImg1 from '../assets/Ebank1.png';
@@ -58,11 +57,11 @@ const projects = [
   //   images: [pharmaImg1],
   //   achievements: ["Reduced order errors by 25%", "Automated inventory tracking"],
   //   icon: <FaDatabase className="project-icon-featured" />
-  // },
+  // // },
   {
     title: "Smart Farm",
     description: "Smart agriculture system powered my ML and AI",
-    technologies:["FastAPI", "Next.js", "Postgre DB", "Tailwind css", "Daisy.ui",],
+    technologies:["FastAPI", "Next.js", "Postgre DB", "Tailwind css", "Daisy.ui", "Docker", "Nginx"],
     github: "https://github.com/samnjoro30/Smart_Agriculture.git",
     images: [Agri],
     achievements: ["In development", "Full authentication backend complete"],
@@ -255,7 +254,7 @@ const ProjectCard = ({ project, order }) => {
         <p className="project-description">{project.description}</p>
         
         <div className="project-technologies">
-          {project.technologies.map((tech, i) => (
+          {project.technologies?.map((tech, i) => (
             <span key={i} className="tech-tag">{tech}</span>
           ))}
         </div>

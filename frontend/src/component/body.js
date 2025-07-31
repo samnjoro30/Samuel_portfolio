@@ -61,7 +61,7 @@ const projects = [
     title: "Smart Farm",
     description: "Smart agriculture system powered my ML and AI",
     technologies:["FastAPI", "Next.js", "Postgre DB", "Tailwind css", "Daisy.ui",],
-    github: "",
+    github: "https://github.com/samnjoro30/Smart_Agriculture.git",
     images: [],
     achievements: ["In development", "Full authentication backend complete"]
   },

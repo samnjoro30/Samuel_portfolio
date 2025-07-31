@@ -41,21 +41,29 @@ const projects = [
   {
     title: "Bazelink E-commerce",
     description: "Full-featured online marketplace with payment integration and admin dashboard",
-    technologies: ["React", "Node.js", "MongoDB", "Redux", "Stripe API"],
+    //technologies: ["React", "Node.js", "MongoDB", "Redux", "Stripe API"],
     // github: "https://github.com/samnjoro30/bazelink",
     liveDemo: "https://www.bazelink.co.ke",
     images: [bazelinkImg1, bazelinkImg2],
-    achievements: ["40% downtime reduction", "30% performance boost", "Integrated payment gateway"],
+    achievements: ["A four-team members collaboration","40% downtime reduction", "30% performance boost", "Integrated payment gateway"],
     icon: <FaCode className="project-icon-featured" />
   },
+  // {
+  //   title: "Pharma Management System",
+  //   description: "CLI application for pharmaceutical inventory and order management",
+  //   technologies: ["C", "File I/O", "Data Structures"],
+  //   github: "https://github.com/samnjoro30/pharma-system",
+  //   images: [pharmaImg1],
+  //   achievements: ["Reduced order errors by 25%", "Automated inventory tracking"],
+  //   icon: <FaDatabase className="project-icon-featured" />
+  // },
   {
-    title: "Pharma Management System",
-    description: "CLI application for pharmaceutical inventory and order management",
-    technologies: ["C", "File I/O", "Data Structures"],
-    github: "https://github.com/samnjoro30/pharma-system",
-    images: [pharmaImg1],
-    achievements: ["Reduced order errors by 25%", "Automated inventory tracking"],
-    icon: <FaDatabase className="project-icon-featured" />
+    title: "Smart Farm",
+    description: "Smart agriculture system powered my ML and AI",
+    technologies:["FastAPI", "Next.js", "Postgre DB", "Tailwind css", "Daisy.ui",],
+    github: "",
+    images: [],
+    achievements: ["In development", "Full authentication backend complete"]
   },
   {
     title: "E-Banking System",

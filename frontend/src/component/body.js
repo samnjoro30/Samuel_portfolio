@@ -37,6 +37,8 @@ import Fair4 from '../assets/fair6.png';
 import Fair5 from '../assets/fair7.png';
 import Fair6 from '../assets/fair8.png';
 
+import Agri from '../assets/Agri.png';
+
 const projects = [
   {
     title: "Bazelink E-commerce",
@@ -62,7 +64,7 @@ const projects = [
     description: "Smart agriculture system powered my ML and AI",
     technologies:["FastAPI", "Next.js", "Postgre DB", "Tailwind css", "Daisy.ui",],
     github: "https://github.com/samnjoro30/Smart_Agriculture.git",
-    images: [],
+    images: [Agri],
     achievements: ["In development", "Full authentication backend complete"]
   },
   {

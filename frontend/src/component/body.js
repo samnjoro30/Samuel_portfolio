@@ -42,7 +42,7 @@ const projects = [
   {
     title: "Bazelink E-commerce",
     description: "Full-featured online marketplace with payment integration and admin dashboard",
-    //technologies: ["React", "Node.js", "MongoDB", "Redux", "Stripe API"],
+    technologies: [""],
     // github: "https://github.com/samnjoro30/bazelink",
     liveDemo: "https://www.bazelink.co.ke",
     images: [bazelinkImg1, bazelinkImg2],
@@ -254,7 +254,7 @@ const ProjectCard = ({ project, order }) => {
         <p className="project-description">{project.description}</p>
         
         <div className="project-technologies">
-          {project.technologies?.map((tech, i) => (
+          {project.technologies.map((tech, i) => (
             <span key={i} className="tech-tag">{tech}</span>
           ))}
         </div>

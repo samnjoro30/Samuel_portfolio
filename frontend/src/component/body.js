@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaGithub, FaExternalLinkAlt, FaCode, FaMobile, FaDatabase, FaShieldAlt, FaChartLine, FaCloudSunRain } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaCode, FaMobile, FaDatabase, FaShieldAlt, FaChartLine, FaCloudSunRain, FaSeedling } from 'react-icons/fa';
 import '../styles/body.css';
 
 // Import multiple images for each project (example - you'll need actual images)
@@ -63,9 +63,10 @@ const projects = [
     description: "Smart agriculture system powered my ML and AI",
     technologies:["FastAPI", "Next.js", "Postgre DB", "Tailwind css", "Daisy.ui", "Docker", "Nginx"],
     github: "https://github.com/samnjoro30/Smart_Agriculture.git",
+    liveDemo: "https://smart-agriculture-pied.vercel.app/",
     images: [Agri],
-    achievements: ["In development", "Full authentication backend complete"],
-    icon: <FaDatabase className="project-icon-featured" />
+    achievements: ["In development", "Home page done and authentication", "dashboard creation phrase", "Full authentication backend complete"],
+    icon: <FaSeedling className="project-icon-featured" />
   },
   {
     title: "E-Banking System",

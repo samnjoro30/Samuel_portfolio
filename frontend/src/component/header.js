@@ -284,7 +284,7 @@ const Header = () => {
                         transition={{ delay: 1.1 }}
                     >
                         <div>
-                            <strong>1+</strong>
+                            <strong>2+</strong>
                             <span>Years of Experience</span>
                         </div>
                         <div>

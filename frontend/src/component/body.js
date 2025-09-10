@@ -5,9 +5,7 @@ import '../styles/body.css';
 // Import multiple images for each project (example - you'll need actual images)
 import bazelinkImg1 from '../assets/baze1.png';
 import bazelinkImg2 from '../assets/about.jpeg';
-//import bazelinkImg3 from '../assets/sam.jpeg';
-//import pharmaImg2 from '../assets/about.jpeg';
-//banking and insurancec
+
 import bankingImg1 from '../assets/Ebank1.png';
 import insuranceImg1 from '../assets/Insurance1.png';
 //events images
@@ -49,15 +47,6 @@ const projects = [
     achievements: ["A four-team members collaboration","40% downtime reduction", "30% performance boost", "Integrated payment gateway"],
     icon: <FaCode className="project-icon-featured" />
   },
-  // {
-  //   title: "Pharma Management System",
-  //   description: "CLI application for pharmaceutical inventory and order management",
-  //   technologies: ["C", "File I/O", "Data Structures"],
-  //   github: "https://github.com/samnjoro30/pharma-system",
-  //   images: [pharmaImg1],
-  //   achievements: ["Reduced order errors by 25%", "Automated inventory tracking"],
-  //   icon: <FaDatabase className="project-icon-featured" />
-  // // },
   {
     title: "Smart Farm",
     description: "Smart agriculture system powered my ML and AI",

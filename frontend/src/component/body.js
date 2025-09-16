@@ -41,7 +41,6 @@ const projects = [
     title: "Bazelink E-commerce",
     description: "Full-featured online marketplace with payment integration and admin dashboard",
     technologies: [""],
-    // github: "https://github.com/samnjoro30/bazelink",
     liveDemo: "https://www.bazelink.co.ke",
     images: [bazelinkImg1, bazelinkImg2],
     achievements: ["A four-team members collaboration","40% downtime reduction", "30% performance boost", "Integrated payment gateway"],
@@ -50,7 +49,7 @@ const projects = [
   {
     title: "Smart Farm",
     description: "Smart agriculture system powered my ML and AI",
-    technologies:["FastAPI", "Next.js", "Postgre DB", "Tailwind css", "Daisy.ui", "Docker", "Nginx"],
+    technologies:["FastAPI", "Next.js", "Postgre DB", "Tailwind css", "Daisy.ui", "Firebase", "vercel",  "Docker", "Nginx"],
     github: "https://github.com/samnjoro30/Smart_Agriculture.git",
     liveDemo: "https://smart-agriculture-pied.vercel.app/",
     images: [Agri],

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaGithub, FaExternalLinkAlt, FaCode, FaMobile, FaDatabase, FaShieldAlt, FaChartLine, FaCloudSunRain, FaSeedling } from 'react-icons/fa';
+import { FaGithub, FaShoppingCart, FaExternalLinkAlt, FaCode, FaMobile, FaDatabase, FaShieldAlt, FaChartLine, FaCloudSunRain, FaSeedling } from 'react-icons/fa';
 import '../styles/body.css';
 
 // Import multiple images for each project (example - you'll need actual images)
@@ -44,7 +44,7 @@ const projects = [
     liveDemo: "https://www.bazelink.co.ke",
     images: [bazelinkImg1, bazelinkImg2],
     achievements: ["A four-team members collaboration","40% downtime reduction", "30% performance boost", "Integrated payment gateway"],
-    icon: <FaCode className="project-icon-featured" />
+    icon: <FaShoppingCart className="project-icon-featured" />
   },
   {
     title: "Smart Farm",

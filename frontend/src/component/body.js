@@ -57,11 +57,11 @@ const projects = [
     icon: <FaSeedling className="project-icon-featured" />
   },
   {
-    title: "E-Banking System",
+    title: "E-Payment System",
     description: "Secure online banking platform with transaction history and user management",
     technologies: ["React+vite", "Next.js", "Node.js", "MySQL", "MongoDb cloud", "JWT Auth", "Github Actions"],
     github: "https://github.com/samnjoro30/E-Banking-Tech",
-    liveDemo: "https://e-banking-tech-61d82.web.app",
+    liveDemo: "https://e-payment-platform.web.app/",
     images: [bankingImg1],
     achievements: ["PCI-DSS compliance", "Fraud detection system", "Working towards using ec2 instance inn AWS"],
     icon: <FaShieldAlt className="project-icon-featured" />

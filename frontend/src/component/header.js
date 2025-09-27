@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaTwitter, FaDownload, FaPaperPlane } from 'react-icons/fa';
 import profileImg from '../assets/sam5.jpeg';
-import CV from '../assets/samuel_njoroge_2025_K_cv.pdf';
+import CV from '../assets/Samuel_kibandi_2025.pdf';
 import '../styles/header.css';
 
 const Header = () => {
@@ -149,7 +149,6 @@ const Header = () => {
                     <div className="shape-1"></div>
                     <div className="shape-2"></div>
                 </div>
-                
                 <div className="container">
                     <motion.div 
                         className="header-content"

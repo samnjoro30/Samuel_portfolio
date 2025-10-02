@@ -202,7 +202,7 @@ const Contact = () => {
               href="https://gitlab.com/samnjoro/"  // Add your Telegram URL
               target="_blank" 
               rel="noopener noreferrer"
-              className="social-link telegram"
+              className="social-link gitlab"
               whileHover={{ y: -5, scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

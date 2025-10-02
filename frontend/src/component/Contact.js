@@ -6,8 +6,9 @@ import {
   FaMapMarkerAlt, 
   FaLinkedin, 
   FaGithub,
-  FaTelegram,
-  FaTwitter
+  FaGitlab,
+  // FaTelegram,
+  // FaTwitter
 } from 'react-icons/fa';
 import { SiUpwork } from 'react-icons/si';
 import '../styles/contact.css';
@@ -183,7 +184,7 @@ const Contact = () => {
               <span>GitHub</span>
             </motion.a>
             
-            <motion.a 
+            {/* <motion.a 
               variants={socialItem}
               href="#"  // Add your Twitter URL
               target="_blank" 
@@ -193,20 +194,20 @@ const Contact = () => {
               whileTap={{ scale: 0.95 }}
             >
               <FaTwitter className="social-icon" />
-              <span>Twitter</span>
-            </motion.a>
+              <span>GitLab</span>
+            </motion.a> */}
             
             <motion.a 
               variants={socialItem}
-              href="#"  // Add your Telegram URL
+              href="https://gitlab.com/samnjoro/"  // Add your Telegram URL
               target="_blank" 
               rel="noopener noreferrer"
               className="social-link telegram"
               whileHover={{ y: -5, scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <FaTelegram className="social-icon" />
-              <span>Telegram</span>
+              <FaGitlab className="social-icon" />
+              <span>Gitlab</span>
             </motion.a>
             
             <motion.a 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaGithub, FaShoppingCart, FaExternalLinkAlt, FaCode, FaMobile, FaDatabase, FaShieldAlt, FaChartLine, FaCloudSunRain, FaSeedling } from 'react-icons/fa';
+import { FaGithub, FaShoppingCart, FaExternalLinkAlt, FaMobile, FaDatabase, FaShieldAlt, FaChartLine, FaCloudSunRain, FaSeedling } from 'react-icons/fa';
 import '../styles/body.css';
 
 // Import multiple images for each project (example - you'll need actual images)

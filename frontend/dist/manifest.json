@@ -1,0 +1,27 @@
+{
+  "short_name": "Sam-Tech Technologies",
+  "name": "Sam-Tech Solution",
+  "icons": [
+    {
+      "src": "sam tech.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "sam tech.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "sam tech.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#191970",
+  "background_color": "#000000"
+}

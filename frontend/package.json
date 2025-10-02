@@ -17,10 +17,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "CI=false react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "generate-sitemap": "node generate-sitemap.js"
   },
   "eslintConfig": {
@@ -42,6 +41,8 @@
     ]
   },
   "devDependencies": {
-    "sitemap-generator": "^8.5.1"
+    "@vitejs/plugin-react": "^5.0.4",
+    "sitemap-generator": "^8.5.1",
+    "vite": "^7.1.8"
   }
 }

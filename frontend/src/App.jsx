@@ -1,4 +1,5 @@
-//import './App.css';
+import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Header from './component/header';
 import Skills from './component/skills';
@@ -7,32 +8,37 @@ import Projects from './component/body';
 import Services from './component/service';
 import Contact from './component/Contact';
 import ThreeLoader from './component/load';
+import Home from './component/home';
 
 function App() {
-
   const [loading, setLoading] = useState(true);
   const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
-    // Simulate a loading time (2.5 seconds)
     const timer = setTimeout(() => setFadeOut(true), 2500);
-    // After fade-out completes, remove the loader
     const removeLoader = setTimeout(() => setLoading(false), 3700);
-
     return () => {
       clearTimeout(timer);
       clearTimeout(removeLoader);
     };
   }, []);
+
+  if (loading) return <ThreeLoader fadeOut={fadeOut} />;
+
   return (
-    <div className="App">
+    <Router>
       <Header />
-      <About/>
-      <Skills/>
-      <Projects/>
-      <Services/>
-      <Contact/>
-    </div>
+      <main className="page-content">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      </main>
+    </Router>
   );
 }
 

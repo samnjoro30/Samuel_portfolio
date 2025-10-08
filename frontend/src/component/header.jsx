@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaTwitter, FaDownload, FaPaperPlane } from 'react-icons/fa';
 import profileImg from '../assets/sam5.jpeg';
 import CV from '../assets/Samuel_kibandi_2025.pdf';
@@ -79,7 +80,9 @@ const Header = () => {
                                     whileHover={{ y: -2 }}
                                     whileTap={{ scale: 0.95 }}
                                 >
-                                    <a href={`#${item.toLowerCase()}`}>{item}</a>
+                                     <Link to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}>
+                                       {item}
+                                    </Link>
                                 </motion.li>
                             ))}
                         </ul>

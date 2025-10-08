@@ -4,7 +4,7 @@ import techImage from '../assets/about.jpeg';
 
 const About = () => {
   return (
-    <section className="about-section" id="about">
+    <section className="about-section">
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">About Me</h2>

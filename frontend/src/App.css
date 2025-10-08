@@ -2,7 +2,12 @@
 .App {
   text-align: center;
 }
-
+.page-content {
+  padding-top: 90px; /* height of your navbar */
+  min-height: 100vh;
+  background-color: var(--darker);
+  transition: all 0.6s ease;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

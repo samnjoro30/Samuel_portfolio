@@ -52,7 +52,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact-section" id="contact">
+    <section className="contact-section" >
       {/* Animated background elements */}
       <div className="bg-shapes">
         <div className="shape-1"></div>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from "react-router-dom";
-import { FaGithub, FaLinkedin, FaTwitter, FaDownload, FaPaperPlane } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaDownload, FaPaperPlane, FaGitlab } from 'react-icons/fa';
 import profileImg from '../assets/sam5.jpeg';
 import CV from '../assets/Samuel_kibandi_2025.pdf';
 import '../styles/header.css';
@@ -266,13 +266,13 @@ const Header = () => {
                                     <FaLinkedin />
                                 </motion.a>
                                 <motion.a 
-                                    href="#" 
+                                    href="https://gitlab.com/samnjoro/" 
                                     target="_blank" 
                                     rel="noreferrer"
                                     whileHover={{ y: -3 }}
                                     whileTap={{ scale: 0.9 }}
                                 >
-                                    <FaTwitter />
+                                    <FaGitlab />
                                 </motion.a>
                             </motion.div>
                         </motion.div>

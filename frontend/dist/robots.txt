@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: [https://sam-tech-solution.web.app/sitemap.xml](https://sam-tech-solution.web.app/sitemap.xml)
+Sitemap: https://sam-tech-solution.web.app/sitemap.xml

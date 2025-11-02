@@ -119,8 +119,8 @@ const Contact = () => {
               <FaPhone className="icon" />
             </div>
             <h3>Call/SMS</h3>
-            <a href="tel:+254799169720" className="contact-link">
-              +254 799 169 720
+            <a href="tel:+254791186675" className="contact-link">
+              +254 791 186 675
               <span className="link-hover-effect"></span>
             </a>
             <p className="contact-note">Available for urgent matters</p>

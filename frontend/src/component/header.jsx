@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaTwitter, FaDownload, FaPaperPlane, FaGitlab } from 'react-icons/fa';
 import profileImg from '../assets/sam5.jpeg';
-import CV from '../assets/Samuel_kibandi_2025.pdf';
+import CV from '../assets/Samuel_Njoroge_Kibandi_cv_2025.pdf';
 import '../styles/header.css';
 
 const Header = () => {

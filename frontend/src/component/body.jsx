@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaGithub, FaShoppingCart, FaExternalLinkAlt, FaMobile, FaDatabase, FaShieldAlt, FaChartLine, FaCloudSunRain, FaSeedling } from 'react-icons/fa';
+import { FaGithub, FaShoppingCart, FaExternalLinkAlt, FaMobile, FaDatabase, FaShieldAlt, FaChartLine, FaCloudSunRain, FaSeedling, MdArticle  } from 'react-icons/fa';
 import '../styles/body.css';
 
 // Import multiple images for each project (example - you'll need actual images)
@@ -86,15 +86,15 @@ const projects = [
     achievements: ["20% faster check-ins", "Real-time attendance tracking"],
     icon: <FaMobile className="project-icon-featured" />
   },
-  {
-    title: "Firearm Tracking System",
-    description: "Web application for firearm registration and monitoring",
-    technologies: ["Flask", "SQLite", "Python", "Bootstrap"],
-    github: "https://github.com/samnjoro30/firearm_management",
-    images: [gunImg1, gun1, gun2, gun3],
-    achievements: ["Digital firearm registry", "License expiration alerts"],
-    icon: <FaShieldAlt className="project-icon-featured" />
-  },
+  // {
+  //   title: "Firearm Tracking System",
+  //   description: "Web application for firearm registration and monitoring",
+  //   technologies: ["Flask", "SQLite", "Python", "Bootstrap"],
+  //   github: "https://github.com/samnjoro30/firearm_management",
+  //   images: [gunImg1, gun1, gun2, gun3],
+  //   achievements: ["Digital firearm registry", "License expiration alerts"],
+  //   icon: <FaShieldAlt className="project-icon-featured" />
+  // },
   {
     title: "Weather web system",
     description: "A real-time weather forecasting web app with dynamic data visualization",
@@ -112,6 +112,14 @@ const projects = [
     images: [Fair, Fair1, Fair2, Fair3, Fair4, Fair5, Fair6],
     achievements: ["Achieved 95%+ accessibility score (WCAG) with semantic HTML/CSS", "Real-time scoring analytics"],
     icon: <FaChartLine className="project-icon-featured" />
+  },{
+    title: "Smart Farm Case Study",
+    description: "case study done on smart farm project to come up with a highly architectured user-oriented system",
+    technologies: ["interviews", "github ", "doc"],
+    github: "https://github.com/samnjoro30/Smart_Agriculture/tree/main/docs",
+    images: [Agri],
+    achievements: ["Validation of Architecture and Design", "provided in-depth analysis for the farms", "Improved Decision-Making and Trade-off Analysis"],
+    icon: <MdArticle className="project-icon-featured"/>
   }
 ];
 

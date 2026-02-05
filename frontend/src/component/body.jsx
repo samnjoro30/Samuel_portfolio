@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaGithub, FaShoppingCart, FaExternalLinkAlt, FaMobile, FaDatabase, FaShieldAlt, FaChartLine, FaCloudSunRain, FaSeedling, MdArticle  } from 'react-icons/fa';
+import { FaGithub, FaShoppingCart, FaExternalLinkAlt, FaMobile, FaShieldAlt, FaChartLine, FaCloudSunRain, FaSeedling, FaArticle  } from 'react-icons/fa';
 import '../styles/body.css';
 
 // Import multiple images for each project (example - you'll need actual images)
@@ -119,7 +119,7 @@ const projects = [
     github: "https://github.com/samnjoro30/Smart_Agriculture/tree/main/docs",
     images: [Agri],
     achievements: ["Validation of Architecture and Design", "provided in-depth analysis for the farms", "Improved Decision-Making and Trade-off Analysis"],
-    icon: <MdArticle className="project-icon-featured"/>
+    icon: <FaArticle className="project-icon-featured"/>
   }
 ];
 

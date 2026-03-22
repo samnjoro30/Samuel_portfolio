@@ -208,7 +208,7 @@ body {
 /* Hero Section */
 .header-section {
     background: linear-gradient(135deg, var(--darker) 0%, var(--dark) 100%);
-    padding: 180px 0 100px;
+    padding: 180px 0 10px;
     position: relative;
     min-height: 100vh;
     display: flex;
